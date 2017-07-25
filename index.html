@@ -1,43 +1,398 @@
-<html>
-    <title>Mission Bit Intro Curriculum</title>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="stylesheet.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- The Modal -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" 
-class="close" title="Close Modal">&times;</span>
+<head>
 
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/2-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="IntroToWeb/intro_curr.html">Intro to Web</a>
+                    </li>
+                    <li>
+                        <a href="#">Android Game Design</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Android Game Design 101</h1>
+                        <p>Lectures: Tuesdays and Thursdays, 4:00pm - 6:00pm, room ?</p>
+                        <p>Instructor: (name and contact info)</p>
+                        <p>Prerequisites: previous programming experience</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Course Overview and Objectives</h2>
+                        <h3>Course Description</h3>
+                        <p>This is a mobile game design course in which students will learn to design and implement a Java game application for Android devices using <a href="http://libgdx.badlogicgames.com/">libGDX</a>, a popular game framework. There will be several guest speakers from the game industry who will talk about game production, success and failure stories, and also technical talks on various game components. You'll get to work with and learn from mentors who are professional software engineers, and get feedback from teams at game development studios. By the end of the course you'll have a playable mobile game, ready for release in the app store.</p>
+                        <p>Topics will include Java programming techniques, the Java Android software development kit (SDK), LibGDX, principles of game design, and version control using git and Github.</p>
+                        <h3>Learning Goals</h3>
+                        <ul>
+                            <li>Technical skills:
+                                <ul>
+                                    <li>Prototype and implement an android game</li>
+                                    <li>Describe the main features of Java</li>
+                                    <li>Write mobile games for Android powered by libGDX</li>
+                                    <li>Use the Android development toolchain to write and debug applications</li>
+                                    <li>Independently learn about and utilize external libraries and APIs</li>
+                                    <li>Use git and github for version control and code sharing (team / open source workflow - pull, push, add, commit, PRs)</li>
+                                </ul>
+                            </li>
+                            <li>Other goals:
+                                <ul>
+                                    <li>Students will work effectively on teams and review each other's code.</li>
+                                    <li>Students will feel like they belong in tech</li>
+                                    <li>Students will have insights into what it’s like to work in the tech industry (pros and cons)</li>
+                                </ul>
+                            </li>
+                    </div>
+                </div>
+
+                <!-- Page Header -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Curriculum
+                            <small>Course Schedule and Resources</small>
+                        </h1>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- Projects Row -->
+                <div class="row">
+                    <div class="col-md-6 portfolio-item">
+                        <h3>Module 1</h3>
+                        <p>Introductions and getting started with Android Studio</p>
+                        <div class="bs-callout bs-callout-warning" id="callout-navbar-overflow"> 
+                            <h4>Agenda</h4> 
+                            <ol> 
+                                <li>Introductions</li> 
+                                <li>Course overview and logistics</li> 
+                                <li>Cloning a repo with git</li>
+                                <li>Running an app on Android Studio</li>
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-danger" id="callout-navbar-overflow"> 
+                            <h4>Learning Outcomes</h4> 
+                            <ol> 
+                                <li>Become familiar with cloning a git repository</li> 
+                                <li>Become familiar with Android Studio</li> 
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-info" id="callout-navbar-overflow"> 
+                            <h4>Resources</h4> 
+                            <ol> 
+                                <li>Lesson Plan</li> 
+                                <li>Slides</li>
+                                <li>Optional</li> 
+                            </ol> 
+                        </div>
+                    </div>
+                    <div class="col-md-6 portfolio-item">
+                        <h3>Module 2</h3>
+                        <p>Introductions and getting started with Android Studio</p>
+                        <div class="bs-callout bs-callout-warning" id="callout-navbar-overflow"> 
+                            <h4>Agenda</h4> 
+                            <ol> 
+                                <li>Introductions</li> 
+                                <li>Course overview and logistics</li> 
+                                <li>Cloning a repo with git</li>
+                                <li>Running an app on Android Studio</li>
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-danger" id="callout-navbar-overflow"> 
+                            <h4>Learning Outcomes</h4> 
+                            <ol> 
+                                <li>Become familiar with cloning a git repository</li> 
+                                <li>Become familiar with Android Studio</li> 
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-info" id="callout-navbar-overflow"> 
+                            <h4>Resources</h4> 
+                            <ol> 
+                                <li>Lesson Plan</li> 
+                                <li>Slides</li>
+                                <li>Optional</li> 
+                            </ol> 
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- Projects Row -->
+                <div class="row">
+                    <div class="col-md-6 portfolio-item">
+                        <h3>Module 3</h3>
+                        <p>Introductions and getting started with Android Studio</p>
+                        <div class="bs-callout bs-callout-warning" id="callout-navbar-overflow"> 
+                            <h4>Agenda</h4> 
+                            <ol> 
+                                <li>Introductions</li> 
+                                <li>Course overview and logistics</li> 
+                                <li>Cloning a repo with git</li>
+                                <li>Running an app on Android Studio</li>
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-danger" id="callout-navbar-overflow"> 
+                            <h4>Learning Outcomes</h4> 
+                            <ol> 
+                                <li>Become familiar with cloning a git repository</li> 
+                                <li>Become familiar with Android Studio</li> 
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-info" id="callout-navbar-overflow"> 
+                            <h4>Resources</h4> 
+                            <ol> 
+                                <li>Lesson Plan</li> 
+                                <li>Slides</li>
+                                <li>Optional</li> 
+                            </ol> 
+                        </div>
+                    </div>
+                    <div class="col-md-6 portfolio-item">
+                        <h3>Module 4</h3>
+                        <p>Introductions and getting started with Android Studio</p>
+                        <div class="bs-callout bs-callout-warning" id="callout-navbar-overflow"> 
+                            <h4>Agenda</h4> 
+                            <ol> 
+                                <li>Introductions</li> 
+                                <li>Course overview and logistics</li> 
+                                <li>Cloning a repo with git</li>
+                                <li>Running an app on Android Studio</li>
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-danger" id="callout-navbar-overflow"> 
+                            <h4>Learning Outcomes</h4> 
+                            <ol> 
+                                <li>Become familiar with cloning a git repository</li> 
+                                <li>Become familiar with Android Studio</li> 
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-info" id="callout-navbar-overflow"> 
+                            <h4>Resources</h4> 
+                            <ol> 
+                                <li>Lesson Plan</li> 
+                                <li>Slides</li>
+                                <li>Optional</li> 
+                            </ol> 
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- Projects Row -->
+                <div class="row">
+                    <div class="col-md-6 portfolio-item">
+                        <h3>Module 5</h3>
+                        <p>Introductions and getting started with Android Studio</p>
+                        <div class="bs-callout bs-callout-warning" id="callout-navbar-overflow"> 
+                            <h4>Agenda</h4> 
+                            <ol> 
+                                <li>Introductions</li> 
+                                <li>Course overview and logistics</li> 
+                                <li>Cloning a repo with git</li>
+                                <li>Running an app on Android Studio</li>
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-danger" id="callout-navbar-overflow"> 
+                            <h4>Learning Outcomes</h4> 
+                            <ol> 
+                                <li>Become familiar with cloning a git repository</li> 
+                                <li>Become familiar with Android Studio</li> 
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-info" id="callout-navbar-overflow"> 
+                            <h4>Resources</h4> 
+                            <ol> 
+                                <li>Lesson Plan</li> 
+                                <li>Slides</li>
+                                <li>Optional</li> 
+                            </ol> 
+                        </div>
+                    </div>
+                    <div class="col-md-6 portfolio-item">
+                        <h3>Module 6</h3>
+                        <p>Introductions and getting started with Android Studio</p>
+                        <div class="bs-callout bs-callout-warning" id="callout-navbar-overflow"> 
+                            <h4>Agenda</h4> 
+                            <ol> 
+                                <li>Introductions</li> 
+                                <li>Course overview and logistics</li> 
+                                <li>Cloning a repo with git</li>
+                                <li>Running an app on Android Studio</li>
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-danger" id="callout-navbar-overflow"> 
+                            <h4>Learning Outcomes</h4> 
+                            <ol> 
+                                <li>Become familiar with cloning a git repository</li> 
+                                <li>Become familiar with Android Studio</li> 
+                            </ol> 
+                        </div>
+                        <div class="bs-callout bs-callout-info" id="callout-navbar-overflow"> 
+                            <h4>Resources</h4> 
+                            <ol> 
+                                <li>Lesson Plan</li> 
+                                <li>Slides</li>
+                                <li>Optional</li> 
+                            </ol> 
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr>
+
+                <!-- Pagination -->
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#">&laquo;</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#">&raquo;</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+
     </div>
+    <!-- /#wrapper -->
 
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Your Website 2014</p>
+            </div>
+        </div>
+        <!-- /.row -->
+    </footer>
 
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-      <button type="submit">Login</button>
-      <input type="checkbox" checked="checked"> Remember me
-    </div>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-    </body>
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
 </html>
