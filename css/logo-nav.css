@@ -92,3 +92,7 @@ body {
 .bs-callout-info h4 {
   color: #1b809e;
 }
+
+.footer {
+  text-align: center;
+}
